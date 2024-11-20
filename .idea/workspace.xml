@@ -23,6 +23,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Forvi"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Forvi/JavaDataAnalysis.git",
@@ -51,6 +57,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Learning\JAVA_Course\JavaDataAnalysis\Data" />
+      <recent name="D:\Learning\JAVA_Course\JavaDataAnalysis\src\main\java" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
