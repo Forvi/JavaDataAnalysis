@@ -28,7 +28,7 @@ public class Distance {
     }
 
     public City GetCityByStudent(String studentName) throws ClientException, ApiException { // 477
-        return vk.users().search(actor).q(studentName).fields(Fields.CITY).university(1).execute().getItems().getFirst().getCity();
+        return vk.users().search(actor).q(studentName).fields(Fields.CITY).university(477).execute().getItems().getFirst().getCity();
     }
 
     public static double calculateDistance(double lat1, double lon1) {
@@ -58,13 +58,8 @@ public class Distance {
 
     public static void main(String[] args) throws ClientException, ApiException {
         Distance distance = new Distance();
-        var city = distance.GetCityByStudent("Ольга Голованова");
+        var city = distance.GetCityByStudent("Денис Матафонов");
         var distanceBetweenCities = getDistanceBetweenCities(city.toString());
-
-        JsonObject jsonObject = JsonParser.parseString(city.toString()).getAsJsonObject();
-        String city1 = jsonObject.get("title").getAsString();
-
-        var test = Geocoder.Geocode(city1);
 
         System.out.println(distanceBetweenCities);
     }
