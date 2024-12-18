@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- URL подключения к PostgreSQL -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/student_db</property>
+
+        <!-- Имя пользователя и пароль -->
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">password</property>
+
+        <!-- Драйвер JDBC -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+
+        <!-- Диалект PostgreSQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- Автоматическое создание/обновление таблиц -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Логирование SQL-запросов -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Кэширование (опционально) -->
+        <property name="hibernate.cache.use_second_level_cache">false</property>
+
+        <!-- Маппинг сущностей -->
+        <mapping class="db.entities.StudentCorrelationEntity"/>
+    </session-factory>
+</hibernate-configuration>
