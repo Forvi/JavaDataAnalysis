@@ -1,14 +1,14 @@
-package Entities;
+package models;
 
 import java.util.ArrayList;
 
-public class StudentEntity {
+public class Student {
     private final String name;
     private final String group;
     private final int pointsCount;
-    private final ArrayList<TopicEntity> topicsForStudent;
+    private final ArrayList<Topic> topicsForStudent;
 
-    public StudentEntity(String name, String group, int pointsCount, ArrayList<TopicEntity> topicsForStudent) {
+    public Student(String name, String group, int pointsCount, ArrayList<Topic> topicsForStudent) {
         this.name = name;
         this.group = group;
         this.pointsCount = pointsCount;
@@ -27,7 +27,7 @@ public class StudentEntity {
         return pointsCount;
     }
 
-    public ArrayList<TopicEntity> getTasks() {
+    public ArrayList<Topic> getTopic() {
         return topicsForStudent;
     }
 

@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4bcd4c8-42c4-4c65-b572-a0acfdd7efac" name="Changes" comment="работа с api">
+    <list default="true" id="b4bcd4c8-42c4-4c65-b572-a0acfdd7efac" name="Changes" comment="parser update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/StudentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/StudentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/TaskEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/TaskEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/ThemeEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/StudentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/TaskEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/TasksTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/TasksTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/TopicEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ConfigLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/Distance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/Distance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/Geocoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/Geocoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,24 +93,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.JavaDataAnalysis [:Services.Distance.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JavaDataAnalysis [:Services.Geocoder.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JavaDataAnalysis [:Services.Parser.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JavaDataAnalysis [:Services.Parser_test.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;task-3&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.JavaDataAnalysis [:Main.main()].executor": "Run",
+    "Gradle.JavaDataAnalysis [:Services.Distance.main()].executor": "Run",
+    "Gradle.JavaDataAnalysis [:Services.Geocoder.main()].executor": "Run",
+    "Gradle.JavaDataAnalysis [:Services.Parser.main()].executor": "Run",
+    "Gradle.JavaDataAnalysis [:Services.Parser_test.main()].executor": "Run",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "task-3",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Learning/JAVA_Course/untitled",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Learning\JAVA_Course\JavaDataAnalysis\src\main\java\Services" />
@@ -135,6 +143,9 @@
       <workItem from="1733761277914" duration="1493000" />
       <workItem from="1734350624051" duration="4562000" />
       <workItem from="1734361114005" duration="2167000" />
+      <workItem from="1734423589885" duration="1869000" />
+      <workItem from="1734455572743" duration="24042000" />
+      <workItem from="1734485062463" duration="3586000" />
     </task>
     <task id="LOCAL-00001" summary="add models">
       <option name="closed" value="true" />
@@ -179,5 +190,13 @@
     <MESSAGE value="add parser" />
     <MESSAGE value="работа с api" />
     <option name="LAST_COMMIT_MESSAGE" value="работа с api" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
