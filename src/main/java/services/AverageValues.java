@@ -23,7 +23,6 @@ public class AverageValues {
 
     public static int WhichAverage(List<double[]> array) {
         int count = 0;
-
         for (double[] value : array) {
             if (count < value.length)
                 count = value.length;
