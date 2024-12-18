@@ -1,11 +1,11 @@
-package Entities;
+package models;
 
-public class TaskEntity {
+public class Task {
     private final String title;
     private final TasksTypes type;
     private final int maxPointsCount;
 
-    public TaskEntity(String title, TasksTypes type, int maxPointsCount) {
+    public Task(String title, TasksTypes type, int maxPointsCount) {
         this.title = title;
         this.type = type;
         this.maxPointsCount = maxPointsCount;

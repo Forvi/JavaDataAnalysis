@@ -1,12 +1,12 @@
-package Entities;
+package models;
 
 import java.util.ArrayList;
 
-public class TopicEntity {
+public class Topic {
     private final String title;
-    private final ArrayList<TaskEntity> taskEntities;
+    private final ArrayList<Task> taskEntities;
 
-    public TopicEntity(String title, ArrayList<TaskEntity> taskEntities) {
+    public Topic(String title, ArrayList<Task> taskEntities) {
         this.title = title;
         this.taskEntities = taskEntities;
     }
@@ -15,7 +15,7 @@ public class TopicEntity {
         return title;
     }
 
-    public ArrayList<TaskEntity> getTasks() {
+    public ArrayList<Task> getTasks() {
         return taskEntities;
     }
 

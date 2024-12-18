@@ -1,4 +1,4 @@
-package Services;
+package services;
 
 import com.opencagedata.jopencage.JOpenCageGeocoder;
 import com.opencagedata.jopencage.model.JOpenCageForwardRequest;
