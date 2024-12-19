@@ -1,4 +1,4 @@
-package services;
+package services.distance;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -10,6 +10,7 @@ import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.httpclient.HttpTransportClient;
 import com.vk.api.sdk.objects.base.City;
 import com.vk.api.sdk.objects.users.Fields;
+import services.ConfigLoader;
 
 public class Distance {
     private final int APP_ID = Integer.parseInt(ConfigLoader.getApiKey("vk_api_code"));

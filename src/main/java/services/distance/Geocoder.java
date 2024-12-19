@@ -1,8 +1,9 @@
-package services;
+package services.distance;
 
 import com.opencagedata.jopencage.JOpenCageGeocoder;
 import com.opencagedata.jopencage.model.JOpenCageForwardRequest;
 import com.opencagedata.jopencage.model.JOpenCageResponse;
+import services.ConfigLoader;
 
 public class Geocoder {
     public static String Geocode(String city) {
