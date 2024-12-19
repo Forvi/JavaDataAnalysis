@@ -1,9 +1,9 @@
-package services;
+package services.analysis;
 
 public class DataProcessing {
     public static boolean isUniform(double[] array) {
         if (array == null || array.length == 0) {
-            return false; // Пустой массив считается неоднородным
+            return false;
         }
 
         double firstValue = array[0];
