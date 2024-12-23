@@ -14,8 +14,7 @@ public class StudentCorrelationEntity {
     @Column(name = "student_name", nullable = false)
     private String name;
 
-    // Работа с массивами PostgreSQL
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "student_correlation_values", joinColumns = @JoinColumn(name = "student_id"))
     @Column(name = "correlation_value")
     private List<Double> correlationsData;

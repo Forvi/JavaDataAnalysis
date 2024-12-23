@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4bcd4c8-42c4-4c65-b572-a0acfdd7efac" name="Changes" comment="Connected database">
+    <list default="true" id="b4bcd4c8-42c4-4c65-b572-a0acfdd7efac" name="Changes" comment="added data parallelization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/AverageValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/analysis/AverageValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/CorrelationAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/analysis/CorrelationAnalysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/DataProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/analysis/DataProcessing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/Distance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/distance/Distance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/Geocoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/distance/Geocoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/entities/StudentCorrelationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/entities/StudentCorrelationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/analysis/DataProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/parser/DataProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/parser/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,33 +93,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.JavaDataAnalysis [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JavaDataAnalysis [:Services.Distance.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JavaDataAnalysis [:Services.Geocoder.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JavaDataAnalysis [:Services.Parser.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JavaDataAnalysis [:Services.Parser_test.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;task-4&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Learning/JAVA_Course/untitled&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.JavaDataAnalysis [:Main.main()].executor": "Run",
+    "Gradle.JavaDataAnalysis [:Services.Distance.main()].executor": "Run",
+    "Gradle.JavaDataAnalysis [:Services.Geocoder.main()].executor": "Run",
+    "Gradle.JavaDataAnalysis [:Services.Parser.main()].executor": "Run",
+    "Gradle.JavaDataAnalysis [:Services.Parser_test.main()].executor": "Run",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "task-4",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Learning/JAVA_Course/untitled",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Learning\JAVA_Course\JavaDataAnalysis\src\main\java\Services" />
@@ -157,7 +154,9 @@
       <workItem from="1734485062463" duration="8034000" />
       <workItem from="1734537801849" duration="11648000" />
       <workItem from="1734626685462" duration="2691000" />
-      <workItem from="1734645927205" duration="1394000" />
+      <workItem from="1734645927205" duration="3006000" />
+      <workItem from="1734649798019" duration="57000" />
+      <workItem from="1734947914850" duration="7850000" />
     </task>
     <task id="LOCAL-00001" summary="add models">
       <option name="closed" value="true" />
@@ -207,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734549636349</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added data parallelization">
+      <option name="closed" value="true" />
+      <created>1734647351985</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734647351985</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +226,8 @@
     <MESSAGE value="работа с api" />
     <MESSAGE value="added Pearson Correlation for themes" />
     <MESSAGE value="Connected database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected database" />
+    <MESSAGE value="added data parallelization" />
+    <option name="LAST_COMMIT_MESSAGE" value="added data parallelization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
