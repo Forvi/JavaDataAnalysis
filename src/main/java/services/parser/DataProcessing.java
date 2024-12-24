@@ -23,7 +23,7 @@ public class DataProcessing {
     public static List<Double> calculateAverageCorrelations(List<List<Double>> studentCorrelations) {
         if (studentCorrelations.isEmpty()) return new ArrayList<>();
 
-        int size = studentCorrelations.get(0).size();
+        int size = studentCorrelations.getFirst().size();
         List<Double> averages = new ArrayList<>();
 
         for (int i = 0; i < size; i++) {

@@ -1,34 +1,33 @@
-import db.dao.StudentCorrelationDao;
-import services.analysis.CorrelationAnalysis;
+import org.jfree.chart.JFreeChart;
 import services.parser.DataProcessing;
-import services.parser.Parser;
+import visualization.drawer.CircleDiagramm;
+import visualization.drawer.ScatterPlot;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
 
-import static services.parser.DataProcessing.calculateAverageCorrelations;
+import static visualization.drawer.ScatterPlotWithRegressionLine.createScatterPlotWithRegression;
+import static visualization.drawer.ScatterPlotWithRegressionLine.displayChart;
 
 public class Main {
     public static void main(String[] args) {
-//        var file = Parser.readCSV("Data/basicprogramming.csv");
-//        var students = Parser.parseStudents(file);
-//        var topics = Parser.getStudentPracticePoints(students);
-//
-//        int threadPoolSize = 4;
-//
-//        try {
-//            Map<String, List<Double>> correlationResults = CorrelationAnalysis.processStudentData(topics, threadPoolSize);
-//            CorrelationAnalysis.printCorrelationResults(correlationResults);
-//        } catch (InterruptedException | ExecutionException e) {
-//            System.err.println("Ошибка при обработке данных: " + e.getMessage());
-//            e.printStackTrace();
-//        }
-
         var averageCorrelations = DataProcessing.getAverageCorrelations();
-        System.out.println("Общая корреляция: " + averageCorrelations);
+
+        int mid = averageCorrelations.size() / 2;
+        List<Double> xData =  averageCorrelations.subList(0, mid);
+        List<Double> yData = averageCorrelations.subList(mid, averageCorrelations.size());
+
+        // График зависимости с линией регрессии
+        JFreeChart chart = createScatterPlotWithRegression(xData, yData);
+        displayChart(chart);
+
+        // График зависимости
+        ScatterPlot sp = new ScatterPlot();
+        JFreeChart scatterPlot = sp.createScatterPlot(averageCorrelations);
+        sp.showChart(scatterPlot);
+
+        // Круговая диаграмма
+        CircleDiagramm circleDiagramm = new CircleDiagramm();
+        CircleDiagramm.createPieDiagram();
     }
 }
 
