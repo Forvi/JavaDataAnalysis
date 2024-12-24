@@ -12,10 +12,12 @@
 <h2>Этапы выполнения</h2>
 <h3>1) Создание моделей</h3>
 <p>Модели менялись неоднократно почти до самого конца проекта, так как поднимался вопрос о необходимости хранения тех или иных данных. В конечном итоге модели выглядят следующим образом:</p>
+
 ![image](https://github.com/user-attachments/assets/d908c00b-5241-41c2-b522-334ae7d227ec)
 
 <h3>2) Парсинг данных</h3>
 <p>Были даны 2 файла с оценками, которые необходимо было спарсить. Снова поднимался вопрос о моделях и хранимых данных, потому парсер через время тоже поменялся. Конечный вариант:</p>
+
 ![image](https://github.com/user-attachments/assets/fd70c4e7-c991-4f1e-be41-d99eedf5b855)
 
 <h3>3) Работа с API</h3>
@@ -48,6 +50,9 @@
   <li>Круговая диаграмма соотношения студентов подходящих под анализ</li>
 </ul>
 </p>
+
 ![image](https://github.com/user-attachments/assets/2a7ed2e9-5bd1-43ae-bac2-9cdcf663561d)
+
 ![image](https://github.com/user-attachments/assets/d2ec8772-bd3c-42c2-be71-11ea0b60701b)
-![Uploading Screenshot 2024-12-24 225716.png…]()
+
+![Screenshot 2024-12-24 225716](https://github.com/user-attachments/assets/47efad55-99ea-4789-8841-7ba65f494d43)
