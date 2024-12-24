@@ -118,12 +118,14 @@ public class Parser {
         var students = parseStudents(file);
         Map<String, List<double[]>> studentPracticePoints = getStudentPracticePoints(students);
 
-        for (Map.Entry<String, List<double[]>> entry : studentPracticePoints.entrySet()) {
-            System.out.println("Student: " + entry.getKey());
-            System.out.println("Practice Points:");
-            for (double[] practicePoints : entry.getValue()) {
-                System.out.println("  " + Arrays.toString(practicePoints));
-            }
-        }
+        System.out.println(String.format("В общем: %s, подходит под критерии: %d", students.size(), studentPracticePoints.size()));
+
+//        for (Map.Entry<String, List<double[]>> entry : studentPracticePoints.entrySet()) {
+//            System.out.println("Student: " + entry.getKey());
+//            System.out.println("Practice Points:");
+//            for (double[] practicePoints : entry.getValue()) {
+//                System.out.println("  " + Arrays.toString(practicePoints));
+//            }
+//        }
     }
 }
