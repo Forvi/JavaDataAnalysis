@@ -26,8 +26,8 @@
   <li>При помощи формулы Хаверсина вычисляется дистанция</li>
   <li>Вывод результата</li>
 </ul>
-</p>
 ![Screenshot 2024-12-24 214319](https://github.com/user-attachments/assets/4c523e59-7340-4331-8c34-dcdf7736349d)
+</p>
 
 <h3>4) База данных</h3>
 <p>Подключил ORM Hibernate и PostgreSQL к проекту, сделал необходимые методы для взаимодействия с БД, а именно: Сохранить, Получить по имени и Получить все. Создал сущность для хранения в БД, она всего одна, так как в других данных нет нужды.</p>
@@ -47,4 +47,3 @@
 ![image](https://github.com/user-attachments/assets/2a7ed2e9-5bd1-43ae-bac2-9cdcf663561d)
 ![image](https://github.com/user-attachments/assets/d2ec8772-bd3c-42c2-be71-11ea0b60701b)
 ![Uploading Screenshot 2024-12-24 225716.png…]()
-
